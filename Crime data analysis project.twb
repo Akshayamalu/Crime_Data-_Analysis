@@ -1,0 +1,2619 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_crime_data' inline='true' name='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_crime_data' name='textscan.0jc0bcu0rugz8l13vlzt81f3czmt'>
+            <connection class='textscan' directory='C:/Users/Home/json file' filename='cleaned_crime_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0jc0bcu0rugz8l13vlzt81f3czmt' name='cleaned_crime_data.csv' table='[cleaned_crime_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Date Reported' ordinal='0' />
+            <column datatype='datetime' name='Date of Occurrence' ordinal='1' />
+            <column datatype='string' name='Time of Occurrence' ordinal='2' />
+            <column datatype='string' name='City' ordinal='3' />
+            <column datatype='integer' name='Crime Code' ordinal='4' />
+            <column datatype='string' name='Crime Description' ordinal='5' />
+            <column datatype='integer' name='Victim Age' ordinal='6' />
+            <column datatype='string' name='Victim Gender' ordinal='7' />
+            <column datatype='string' name='Crime Domain' ordinal='8' />
+            <column datatype='integer' name='Police Deployed' ordinal='9' />
+            <column datatype='string' name='Case Closed' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date Reported</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date Reported]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Date Reported</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date of Occurrence</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date of Occurrence]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Date of Occurrence</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time of Occurrence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Time of Occurrence]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Time of Occurrence</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crime Code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Crime Code]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Crime Code</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crime Description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crime Description]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Crime Description</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Victim Age]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Victim Age</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Victim Gender]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Victim Gender</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crime Domain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Crime Domain]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Crime Domain</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Police Deployed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Police Deployed]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Police Deployed</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Case Closed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Case Closed]</local-name>
+            <parent-name>[cleaned_crime_data.csv]</parent-name>
+            <remote-alias>Case Closed</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Numer of Records' datatype='integer' name='[Calculation_971088725216931840]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Crime Code])' />
+      </column>
+      <column datatype='string' name='[Case Closed]' role='dimension' type='nominal' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='integer' name='[Crime Code]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Crime Description]' role='dimension' type='nominal' />
+      <column datatype='datetime' name='[Date of Occurrence]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' name='[Victim Age]' role='dimension' type='ordinal' />
+      <column caption='cleaned_crime_data.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]' role='measure' type='quantitative' />
+      <column-instance column='[Date of Occurrence]' derivation='Day' name='[dy:Date of Occurrence:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Case Closed]' derivation='None' name='[none:Case Closed:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Crime Code]' derivation='None' name='[none:Crime Code:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Crime Description]' derivation='None' name='[none:Crime Description:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Home/AppData/Local/Temp/TableauTemp/#TableauTemp_1kpewpg18h90er1gsxpa31o4xu7s.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/10/2025 02:32:37 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date Reported</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Date Reported]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date Reported</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1311</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date of Occurrence</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date of Occurrence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date of Occurrence</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1500</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time of Occurrence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Time of Occurrence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time of Occurrence</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1500</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crime Code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Crime Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Crime Code</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>476</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crime Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Crime Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Crime Description</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victim Age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Victim Age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victim Age</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>70</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victim Gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Victim Gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victim Gender</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Crime Domain</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Crime Domain]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Crime Domain</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Police Deployed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Police Deployed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Police Deployed</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Case Closed</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Case Closed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Case Closed</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned_crime_data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Crime Description:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;ILLEGAL POSSESSION&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ASSAULT&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DRUG OFFENSE&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;SEXUAL ASSAULT&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;KIDNAPPING&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;FRAUD&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;COUNTERFEITING&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;HOMICIDE&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SHOPLIFTING&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;TRAFFIC VIOLATION&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;PUBLIC INTOXICATION&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;IDENTITY THEFT&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;CYBERCRIME&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;ROBBERY&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DOMESTIC VIOLENCE&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[dy:Date of Occurrence:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>24</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Crime Code:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>109</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>131</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>152</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>173</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>194</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>215</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>235</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>257</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>277</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>297</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>318</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>339</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>359</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>379</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>399</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>420</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>441</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>463</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>484</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>506</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>528</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>550</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>570</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>591</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>101</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>121</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>144</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>164</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>186</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>207</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>227</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>248</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>269</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>289</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>310</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>331</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>351</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>371</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>391</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>412</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>432</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>454</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>475</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>497</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>518</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>542</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>562</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>583</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>105</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>126</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>148</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>168</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>190</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>211</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>231</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>253</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>273</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>293</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>314</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>335</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>355</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>375</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>395</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>416</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>436</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>458</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>480</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>501</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>523</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>546</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>566</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>587</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>113</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>136</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>156</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>177</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>198</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>219</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>239</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>261</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>281</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>301</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>323</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>343</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>363</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>383</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>403</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>424</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>446</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>467</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>489</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>510</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>532</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>554</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>574</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>595</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>110</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>132</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>153</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>174</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>195</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>216</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>236</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>258</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>278</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>298</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>319</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>340</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>360</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>380</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>400</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>421</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>443</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>464</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>485</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>507</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>529</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>551</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>571</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>592</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>106</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>127</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>149</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>169</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>191</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>212</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>232</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>254</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>274</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>294</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>315</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>336</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>356</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>376</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>396</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>417</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>438</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>459</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>481</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>503</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>525</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>547</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>567</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>588</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>119</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>142</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>162</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>184</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>205</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>225</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>246</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>267</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>287</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>308</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>329</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>349</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>369</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>389</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>410</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>430</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>452</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>473</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>495</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>516</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>539</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>560</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>581</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>102</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>122</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>145</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>165</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>187</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>208</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>228</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>249</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>270</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>290</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>311</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>332</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>352</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>372</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>392</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>413</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>433</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>455</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>476</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>498</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>519</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>543</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>563</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>584</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>117</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>140</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>160</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>182</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>203</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>223</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>244</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>265</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>285</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>306</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>327</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>347</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>367</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>387</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>407</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>428</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>450</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>471</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>493</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>514</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>537</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>558</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>578</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>599</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>107</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>129</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>150</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>171</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>192</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>213</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>233</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>255</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>275</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>295</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>316</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>337</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>357</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>377</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>397</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>418</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>439</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>460</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>482</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>504</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>526</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>548</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>568</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>589</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>114</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>137</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>157</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>178</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>200</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>220</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>240</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>262</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>282</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>302</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>324</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>344</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>364</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>384</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>404</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>425</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>447</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>468</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>490</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>511</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>533</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>555</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>575</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>596</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>115</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>138</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>158</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>180</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>201</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>221</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>241</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>263</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>283</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>303</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>325</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>345</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>365</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>385</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>405</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>426</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>448</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>469</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>491</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>512</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>535</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>556</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>576</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>597</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>118</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>141</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>161</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>183</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>204</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>224</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>245</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>266</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>286</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>307</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>328</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>348</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>368</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>388</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>408</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>429</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>451</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>472</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>494</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>515</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>538</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>559</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>579</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>120</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>143</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>163</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>185</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>206</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>226</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>247</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>268</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>288</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>309</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>330</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>350</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>370</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>390</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>411</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>431</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>453</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>474</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>496</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>517</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>541</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>561</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>582</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>111</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>133</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>154</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>175</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>196</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>217</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>237</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>259</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>279</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>299</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>320</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>341</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>361</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>381</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>401</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>422</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>444</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>465</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>486</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>508</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>530</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>552</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>572</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>593</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>108</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>130</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>151</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>172</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>193</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>214</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>234</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>256</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>276</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>296</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>317</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>338</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>358</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>378</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>398</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>419</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>440</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>461</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>483</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>505</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>527</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>549</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>569</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>590</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>103</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>123</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>146</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>166</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>188</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>209</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>229</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>250</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>271</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>291</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>312</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>333</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>353</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>373</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>393</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>414</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>434</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>456</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>477</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>499</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>520</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>544</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>564</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>585</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>116</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>139</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>159</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>181</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>202</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>222</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>242</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>264</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>284</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>304</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>326</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>346</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>366</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>386</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>406</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>427</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>449</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>470</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>492</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>513</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>536</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>557</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>577</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>598</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>112</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>135</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>155</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>176</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>197</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>218</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>238</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>260</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>280</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>300</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>322</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>342</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>362</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>382</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>402</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>423</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>445</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>466</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>487</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>509</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>531</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>553</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>573</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>594</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>104</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>125</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>147</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>167</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>189</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>210</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>230</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>252</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>272</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>292</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>313</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>334</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>354</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>374</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>394</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>415</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>435</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>457</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>479</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>500</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>521</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>545</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>565</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>586</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Case Closed:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_crime_data.csv' id='cleaned_crime_data.csv_D7D5939AF669405AB3E677D946FE8AC4'>
+            <properties context=''>
+              <relation connection='textscan.0jc0bcu0rugz8l13vlzt81f3czmt' name='cleaned_crime_data.csv' table='[cleaned_crime_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Date Reported' ordinal='0' />
+                  <column datatype='datetime' name='Date of Occurrence' ordinal='1' />
+                  <column datatype='string' name='Time of Occurrence' ordinal='2' />
+                  <column datatype='string' name='City' ordinal='3' />
+                  <column datatype='integer' name='Crime Code' ordinal='4' />
+                  <column datatype='string' name='Crime Description' ordinal='5' />
+                  <column datatype='integer' name='Victim Age' ordinal='6' />
+                  <column datatype='string' name='Victim Gender' ordinal='7' />
+                  <column datatype='string' name='Crime Domain' ordinal='8' />
+                  <column datatype='integer' name='Police Deployed' ordinal='9' />
+                  <column datatype='string' name='Case Closed' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Crime Type Analysis'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_crime_data' name='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc'>
+            <column datatype='integer' name='[Crime Code]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Crime Description]' role='dimension' type='nominal' />
+            <column-instance column='[Crime Code]' derivation='Count' name='[cnt:Crime Code:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Crime Code]' derivation='None' name='[none:Crime Code:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Crime Description]' derivation='None' name='[none:Crime Description:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Code:ok]' direction='DESC' using='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[cnt:Crime Code:qk]' />
+          <computed-sort column='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Description:nk]' direction='DESC' using='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[cnt:Crime Code:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Code:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[cnt:Crime Code:qk]</rows>
+        <cols>([federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Description:nk] / [federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Code:ok])</cols>
+      </table>
+      <simple-id uuid='{B65C27C6-E5D1-47C2-BD59-1D8592D98C6C}' />
+    </worksheet>
+    <worksheet name='Crime_Trend_Daily '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_crime_data' name='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc'>
+            <column caption='Numer of Records' datatype='integer' name='[Calculation_971088725216931840]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Crime Code])' />
+            </column>
+            <column datatype='integer' name='[Crime Code]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Crime Domain]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Date of Occurrence]' role='dimension' type='ordinal' />
+            <column-instance column='[Date of Occurrence]' derivation='Day' name='[dy:Date of Occurrence:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Crime Domain]' derivation='None' name='[none:Crime Domain:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_971088725216931840]' derivation='User' name='[usr:Calculation_971088725216931840:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[usr:Calculation_971088725216931840:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Domain:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[usr:Calculation_971088725216931840:qk]</rows>
+        <cols>[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[dy:Date of Occurrence:ok]</cols>
+      </table>
+      <simple-id uuid='{5EAE1370-CECF-498E-B1E4-52E56130CC99}' />
+    </worksheet>
+    <worksheet name='Crime_Trend_Monthly '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_crime_data' name='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc'>
+            <column caption='Numer of Records' datatype='integer' name='[Calculation_971088725216931840]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Crime Code])' />
+            </column>
+            <column datatype='integer' name='[Crime Code]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Crime Domain]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Date of Occurrence]' role='dimension' type='ordinal' />
+            <column-instance column='[Date of Occurrence]' derivation='Month' name='[mn:Date of Occurrence:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Crime Domain]' derivation='None' name='[none:Crime Domain:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_971088725216931840]' derivation='User' name='[usr:Calculation_971088725216931840:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Domain:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[usr:Calculation_971088725216931840:qk]</rows>
+        <cols>[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[mn:Date of Occurrence:ok]</cols>
+      </table>
+      <simple-id uuid='{2EC98E0B-6CE2-49C0-8EC9-E8282FB6AE8A}' />
+    </worksheet>
+    <worksheet name='Crime_Trend_Yearly'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_crime_data' name='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0frfmju1k7wb5h1bpgbxs1g6z6yc'>
+            <column caption='Numer of Records' datatype='integer' name='[Calculation_971088725216931840]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([Crime Code])' />
+            </column>
+            <column datatype='integer' name='[Crime Code]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Crime Domain]' role='dimension' type='nominal' />
+            <column datatype='datetime' name='[Date of Occurrence]' role='dimension' type='ordinal' />
+            <column-instance column='[Crime Domain]' derivation='None' name='[none:Crime Domain:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_971088725216931840]' derivation='User' name='[usr:Calculation_971088725216931840:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date of Occurrence]' derivation='Year' name='[yr:Date of Occurrence:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[yr:Date of Occurrence:ok]' value='28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[yr:Date of Occurrence:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[usr:Calculation_971088725216931840:qk]</rows>
+        <cols>([federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Domain:nk] / [federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[yr:Date of Occurrence:ok])</cols>
+      </table>
+      <simple-id uuid='{FE2C4D0C-3223-4D33-B6A5-2D97164C5B69}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='7' param='horz' type-v2='layout-flow' w='99052' x='474' y='999'>
+            <zone h='98002' id='5' type-v2='layout-basic' w='91045' x='474' y='999'>
+              <zone h='31648' id='3' name='Crime_Trend_Yearly' w='32859' x='474' y='67353'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='32334' id='9' name='Crime_Trend_Monthly ' w='91045' x='474' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='34020' id='11' name='Crime_Trend_Daily ' w='91045' x='474' y='33333'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='31648' id='12' name='Crime Type Analysis' w='58186' x='33333' y='67353'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='135' h='98002' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='8007' x='91519' y='999'>
+              <zone h='16854' id='8' name='Crime_Trend_Yearly' pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[yr:Date of Occurrence:ok]' type-v2='color' w='8007' x='91519' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11611' id='10' name='Crime_Trend_Monthly ' pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Domain:nk]' type-v2='color' w='8007' x='91519' y='17853'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='69537' id='13' name='Crime Type Analysis' pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Code:ok]' type-v2='color' w='8007' x='91519' y='29464'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='14' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='251' h='32334' id='9' is-fixed='true' name='Crime_Trend_Monthly ' w='91045' x='474' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11611' id='10' name='Crime_Trend_Monthly ' pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Domain:nk]' type-v2='color' w='8007' x='91519' y='17853'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='264' h='34020' id='11' is-fixed='true' name='Crime_Trend_Daily ' w='91045' x='474' y='33333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='31648' id='3' is-fixed='true' name='Crime_Trend_Yearly' w='32859' x='474' y='67353'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='16854' id='8' name='Crime_Trend_Yearly' pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[yr:Date of Occurrence:ok]' type-v2='color' w='8007' x='91519' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='245' h='31648' id='12' is-fixed='true' name='Crime Type Analysis' w='58186' x='33333' y='67353'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='69537' id='13' name='Crime Type Analysis' pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Code:ok]' type-v2='color' w='8007' x='91519' y='29464'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F3691D47-292A-43D9-9200-F1A26B0D2C2D}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Crime_Trend_Yearly'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[yr:Date of Occurrence:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4962623B-2581-4A22-8658-C28F0D9DC05E}' />
+    </window>
+    <window class='worksheet' name='Crime_Trend_Monthly '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Domain:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{64DA2972-C6E5-4B6C-B3DD-1255E7ED53BB}' />
+    </window>
+    <window class='worksheet' name='Crime_Trend_Daily '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Domain:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{455C2513-7002-401D-A7D4-AF3FB1276026}' />
+    </window>
+    <window class='worksheet' name='Crime Type Analysis'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0frfmju1k7wb5h1bpgbxs1g6z6yc].[none:Crime Code:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8AF6EA9D-556B-4945-8D7D-B49BD144F988}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Crime Type Analysis'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Crime_Trend_Daily '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Crime_Trend_Monthly '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Crime_Trend_Yearly' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{24153A3D-E35B-4024-BFAD-71C9CBA45F76}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Crime_Trend_Yearly' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
